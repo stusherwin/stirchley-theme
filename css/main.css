@@ -1,0 +1,205 @@
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
+
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700,100italic,300italic,400italic,700italic&subset=latin);
+@import url('https://fonts.googleapis.com/css?family=Rokkitt:300|Scope+One|Work+Sans:300');
+
+/* .tab-content {
+  @apply hidden;
+}
+
+.tab-content:target {
+  @apply block;
+} */
+
+p, li, blockquote, td, th {
+  @apply font-sans text-sm leading-tight tracking-normal;
+}
+
+th, td {
+  @apply text-left pr-8 align-top;
+}
+
+th {
+  @apply whitespace-no-wrap;
+}
+
+p, blockquote, table, ul {
+  @apply mt-4;
+}
+
+li {
+  @apply mt-0 pl-1;
+}
+
+ul {
+  @apply pl-6;
+}
+
+blockquote {
+  @apply py-2 px-4 bg-brand-lightest;
+}
+
+.tab-content h1 {
+  @apply font-normal text-2xl mt-4;
+}
+
+.tab-content h2 {
+  @apply font-normal text-xl mt-4;
+}
+
+.tab-content h3 {
+  @apply font-normal text-base mt-4;
+}
+
+.tab-content h4 {
+  @apply font-normal text-sm mt-4;
+}
+
+.tab-content h5 {
+  @apply font-normal text-sm mt-4;
+}
+
+.tab-content img {
+  @apply w-full mt-4;
+}
+
+.tab-content img + h1 {
+  @apply mt-4;
+}
+
+.tab-content h2 + p, .tab-content h2 + ul {
+  @apply mt-2;
+}
+
+.tab-content h3 + p, .tab-content h3 + ul {
+  @apply mt-1;
+}
+
+.tab-content h4 + p, .tab-content h4 + ul {
+  @apply mt-0;
+}
+
+.tab-content h5 + p, .tab-content h5 + ul {
+  @apply mt-0;
+}
+
+i {
+  @apply whitespace-no-wrap;
+  font-style: inherit;
+}
+
+@screen sm {
+  p, li, blockquote, td, th {
+    @apply text-xl;
+  }
+
+  p, blockquote, table, ul {
+    @apply mt-8;
+  }
+
+  li {
+    @apply mt-0;
+  }
+
+  ul {
+    @apply pl-8;
+  }
+
+  .tab-content h1 {
+    @apply mt-8 text-5xl font-light;
+  }
+
+  .tab-content h2 {
+    @apply mt-8 text-3xl font-normal;
+  }
+
+  .tab-content h3 {
+    @apply mt-8 text-2xl font-normal;
+  }
+
+  .tab-content h4 {
+    @apply mt-8 text-xl font-normal;
+  }
+
+  .tab-content h5 {
+    @apply mt-8 text-xl font-normal;
+  }
+
+  .tab-content img {
+     @apply mt-8;
+  }
+
+  .tab-content img + h1 {
+    @apply mt-8;
+  }
+
+  blockquote {
+    @apply py-3 px-6;
+  }
+}
+
+@screen md {
+  p, li {
+    @apply leading-normal;
+  }
+  
+  ul {
+    @apply pl-10;
+  }
+
+  blockquote {  
+    @apply py-4 px-8;
+  }
+}
+
+@screen lg {
+  ul {
+    @apply pl-12;
+  }
+
+  .tab-content h1 {
+    @apply mt-16;
+  }  
+
+  .tab-content h2 {
+    @apply mt-8;
+  }
+
+  .tab-content h3 {
+    @apply mt-8;
+  }
+
+  .tab-content h4 {
+    @apply mt-8;
+  }
+
+  .tab-content h5 {
+    @apply mt-8;
+  }
+
+  .tab-content h2 + p {
+    @apply mt-4;
+  }
+
+  .tab-content h3 + p {
+    @apply mt-2;
+  }
+
+  .tab-content h4 + p {
+    @apply mt-2;
+  }
+
+  .tab-content h5 + p {
+    @apply mt-2;
+  }
+
+  .tab-content img {
+    @apply mt-8;
+  }
+
+  .tab-content img + h1 {
+    @apply mt-8;
+  }
+}
